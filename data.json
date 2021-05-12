@@ -1,0 +1,25 @@
+{
+    "users":[
+        {
+            "name":"Max Axwell",
+            "email": "max2max@gmail.com",
+            "message": "Analyze the situation first, then panic."
+        },
+        {
+            "name":"James Matheus",
+            "email": "jmath9999@gmail.com",
+            "message": "See, think and do"
+        },
+        {
+            "name":"Recardo Rodhriques",
+            "email": "roadrunner@gmail.com",
+            "message": "I would like to cry alone in my Ferrari, than to cry on someones shoulder with empty pocket."
+        },
+        {
+            "name":"Josh Zerka",
+            "email": "zerkaorignal@gmail.com",
+            "message": "Life is like an ice cream, enjoy it before it melts."
+        }
+
+    ]
+}

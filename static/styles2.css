@@ -1,0 +1,250 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+*{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+body{
+    margin-left: 0%;
+    overflow-x: hidden;
+}
+
+#top{
+    display: flex;
+}
+
+#logo{
+    padding: 3px;
+    padding-left: 9px;
+    padding-right: 9px;
+    background-color: rgb(131, 16, 238);
+    border-radius: 15px;
+    color: whitesmoke;
+    position: relative;
+   
+}
+
+#nav-bar{
+    flex: 1;
+    color: rgb(131, 16, 238);
+    padding: 5px;
+    height: 30px;
+    margin-left: 5px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    margin-right: 5px;
+}
+
+a:hover{
+    text-shadow: 0px 0px 20px rgb(77, 74, 74);
+}
+
+#nav-controls{
+    margin-top: 8px;
+    position: relative;
+    font-size: smaller;
+}
+
+#share-feelings{
+    position: relative;
+    margin-left: 0%;
+    width: 100vw;
+    height: 55vh;
+    background-image: radial-gradient(circle at 10% 10%, rgb(233, 20, 162), rgb(23, 23, 218));
+    text-align: center;
+}
+
+#share-box{
+    display: inline-block;
+    background-color: whitesmoke;
+    width: 50%;
+    height: 60%;
+    position: relative;
+    top: 20%;
+}
+
+#my-feeling{
+    background-color: rgb(206, 162, 247);
+    border-radius: 5px;
+    border-width: 0px;
+    position: inherit; 
+    display: block;
+    margin: 0 auto;
+    top: 20%;
+    padding: 5px;
+    width: 300px;
+    outline: none;
+}
+
+
+/* ::placeholder{
+    color: black;
+}
+
+
+input::placeholder:before{
+    
+    content: "Share feelings";
+    font-weight: bold;
+    color: rgb(131, 16, 238);
+} */
+
+#button1{
+    background-color: rgb(131, 16, 238);
+    padding: 5px;
+    border-radius: 7px;
+    color: whitesmoke;
+    border: none;
+    margin: 5px auto;
+    display: block;
+    position: relative;
+    top: 7vh; 
+}
+#heart{
+    position: absolute;
+    color: rgb(131, 16, 238);
+    top: 13%;
+    right:26%;
+    z-index: 1;
+    font-size: larger;
+}
+
+#my-feeling[required]+label::before {
+    content: 'Share feelings';
+    color: rgb(131, 16, 238);
+    font-weight: bold;
+}
+#my-feeling[required]+label {
+    color: black;
+    position: relative;
+    top:6%;
+}  
+
+#my-feeling[required]:invalid+label {
+    display: inline-block;
+}
+  
+#my-feeling[required]:valid+label {
+    display: none;
+}
+
+label{
+    font-family: 200;
+}
+
+#bottom-text{
+    position: relative;
+    text-align: center;
+    vertical-align: baseline;
+    top:23%;
+    color: whitesmoke;
+}
+
+#community-share{
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+}
+
+#box1{
+    padding: 20px;
+    background-color: rgb(206, 162, 247);
+    height: 550px;
+    width: 46%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#box2{
+    padding: 20px;
+    align-self: flex-end;
+    background-color: rgb(206, 162, 247);
+    height: 550px;
+    width: 46%;
+    /* margin-left: auto; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#post1{
+    background-color: whitesmoke;
+    margin: 0 auto;
+    width: 50%;
+    height: 200px;
+    box-shadow: 0px 4px 15px rgb(122, 120, 120);
+    font-weight: 200;
+}
+
+#post2{
+    background-color: whitesmoke;
+    margin: 0 auto;
+    width: 50%;
+    height: 200px;
+    box-shadow: 0px 4px 15px rgb(122, 120, 120);
+    font-weight: 200;
+}
+
+p{
+    font-weight: inherit;
+    margin: 10px;
+    margin-top: 10px;
+    word-wrap: break-word;
+}
+
+#post-label{
+    padding: 5px;
+    background-color: rgb(206, 162, 247);
+    border-radius: 10px;
+    width:fit-content;
+    position: relative;
+    margin: 10px;
+    font-weight: inherit;
+}
+
+#bottom{
+    height: 550px;
+    background-image: radial-gradient(circle at 10% 10%, rgb(233, 20, 162), rgb(23, 23, 218));
+    width:100vw;
+    font-weight: 200;
+}
+
+#party-emoji{
+    position: relative;
+    width: 230px;
+    float: right;
+    margin: 50px;
+    top: 110px;
+    right: 200px;
+    filter:drop-shadow( 0px 10px 25px black);
+}
+
+#learn-more-box{
+    position: relative;
+    width: 450px;
+    height: 225px;
+    display: inline-block;
+    background-color: whitesmoke;
+    vertical-align: middle;
+    top: 163px;
+    left: 200px;
+    font-weight: inherit;
+    word-wrap:break-word;
+}
+
+button{
+    padding: 5px;
+    border-radius: 7px;
+    background-color: rgb(131, 16, 238);
+    color: whitesmoke;
+    border: none;
+    position: relative;
+    margin: 10px;
+}
