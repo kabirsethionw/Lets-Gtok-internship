@@ -271,9 +271,9 @@ button{
 
 
 #logo2{
-    background-color: rgb(131, 16, 238);
+    background-image: radial-gradient(circle at 10% 10%, rgb(233, 20, 162), rgb(23, 23, 218));
     background-clip: padding-box;
-    -webkit-text-fill-color: rgb(131, 16, 238);
+    -webkit-text-fill-color: radial-gradient(circle at 10% 10%, rgb(233, 20, 162), rgb(23, 23, 218));
     -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: whitesmoke;
     border-radius: 70px;
@@ -321,7 +321,7 @@ button{
     background-color: transparent;
   }
   ::-webkit-scrollbar {
-    width: 0 !important;
+    width: 4px !important;
     background-color: transparent;
   }
   ::-webkit-scrollbar-thumb {
@@ -360,3 +360,7 @@ button{
     color:gray
 }
 
+#post-message{
+    position: relative;
+    bottom: 10px;
+}
