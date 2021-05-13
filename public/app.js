@@ -20,24 +20,21 @@ const usersRef = dbRef.child('users');
 
 if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
   // true for mobile device
-  alert("mobile device");
+  alert("Please view desktop version.");
 }
 //GET
 var ptr = 0;
-var usrPosts = ["post1", "post2", "post1", "post2"];
 var messageText = ["#box1 #post1", "#box1 #post2", "#box2 #post1", "#box2 #post2"]
-console.log(document.getElementById(usrPosts[0]).children[1].innerHTML)
-alert(document.querySelector(messageText[0]).children[1].innerHTML)
 usersRef.on("child_added", snap => {
   if(ptr>3) return;
-  document.querySelector(messageText[ptr]).children[1].innerHTML = snap.val().message;
-  let usrname = document.getElementById(usrPosts[ptr]).children[2].getElementsByTagName("strong")[0];
+  let post = document.querySelector(messageText[ptr])
+  post.children[1].innerHTML = snap.val().message;
+  let usrname = post.children[2].getElementsByTagName("strong")[0];
   usrname.innerHTML = "@" + snap.val().name.replace(/\s/g,"_");
   let email = document.createTextNode(snap.val().email)
-  document.getElementById(usrPosts[ptr]).children[2].appendChild(email);
+  post.children[2].appendChild(email);
   
   console.log(snap.val());
-  console.log("Hello ",document.getElementById(usrPosts[ptr]).children[1].innerHTML)
   ptr++;
 });
 

@@ -10,6 +10,7 @@
 body{
     margin-left: 0%;
     overflow-x: hidden;
+    overflow: overlay;
 }
 
 #top{
@@ -143,7 +144,7 @@ div label{
     position: relative;
     text-align: center;
     vertical-align: baseline;
-    top:23%;
+    top:35%;
     color: whitesmoke;
 }
 
@@ -225,7 +226,7 @@ p{
     float: right;
     margin: 50px;
     top: 110px;
-    right: 200px;
+    right: 15%;
     filter:drop-shadow( 0px 10px 25px black);
 }
 
@@ -253,7 +254,6 @@ button{
 }
 
 #contact{
-    background: red;
     background:  radial-gradient(circle at 10% 10%, rgb(233, 20, 162), rgb(23, 23, 218));
     -webkit-background-clip: text;
     background-clip: text;
@@ -264,7 +264,7 @@ button{
     border-image-slice: 1;
     text-align: left;
     height: 500px; 
-    width: 98.5vw;
+    width: 98.7vw;
     margin-top: 10px;
 }
 
@@ -287,14 +287,16 @@ button{
     float:left;
     font-size:600%;
     border-right: 3px solid gray;
-    padding: 5px;
+    padding: 20px;
     margin-left: 15vw;
     margin-right: 15px;
     margin-top: 100px;   
+    
 }
 
 .onScrollBar::-webkit-scrollbar {
-    width: 20px;
+    width: 15px;
+    background-color: rgba(131, 16, 238, 0.315);
   }
   
   /* Track */
@@ -321,7 +323,7 @@ button{
     background-color: transparent;
   }
   ::-webkit-scrollbar {
-    width: 4px !important;
+    width: 0px;
     background-color: transparent;
   }
   ::-webkit-scrollbar-thumb {
@@ -354,6 +356,7 @@ button{
     border-left: 3px solid rgb(131, 16, 238);
     outline-color: gray;
     background-color: rgb(206, 162, 247);
+    width: auto;
 }
 
 #contact-form > input[type=text]::placeholder{
@@ -364,3 +367,4 @@ button{
     position: relative;
     bottom: 10px;
 }
+
