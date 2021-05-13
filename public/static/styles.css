@@ -1,7 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-
 *{
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
@@ -84,19 +83,6 @@ a:hover{
     outline: none;
 }
 
-
-/* ::placeholder{
-    color: black;
-}
-
-
-input::placeholder:before{
-    
-    content: "Share feelings";
-    font-weight: bold;
-    color: rgb(131, 16, 238);
-} */
-
 #button1{
     background-color: rgb(131, 16, 238);
     padding: 5px;
@@ -172,7 +158,6 @@ div label{
     background-color: rgb(206, 162, 247);
     height: 550px;
     width: 46%;
-    /* margin-left: auto; */
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -182,7 +167,7 @@ div label{
     background-color: whitesmoke;
     margin: 0 auto;
     width: 50%;
-    height: 200px;
+    height: auto;
     box-shadow: 0px 4px 15px rgb(122, 120, 120);
     font-weight: 200;
 }
@@ -191,7 +176,7 @@ div label{
     background-color: whitesmoke;
     margin: 0 auto;
     width: 50%;
-    height: 200px;
+    height: auto;
     box-shadow: 0px 4px 15px rgb(122, 120, 120);
     font-weight: 200;
 }
@@ -218,15 +203,16 @@ p{
     background-image: radial-gradient(circle at 10% 10%, rgb(233, 20, 162), rgb(23, 23, 218));
     width:100vw;
     font-weight: 200;
+    margin-right: 0;
 }
 
 #party-emoji{
     position: relative;
-    width: 230px;
+    width: 20%;
     float: right;
     margin: 50px;
-    top: 110px;
-    right: 15%;
+    top: 10%;
+    right: 5%;
     filter:drop-shadow( 0px 10px 25px black);
 }
 
@@ -238,7 +224,7 @@ p{
     background-color: whitesmoke;
     vertical-align: middle;
     top: 163px;
-    left: 200px;
+    left: 10%;
     font-weight: inherit;
     word-wrap:break-word;
 }
@@ -291,7 +277,6 @@ button{
     margin-left: 15vw;
     margin-right: 15px;
     margin-top: 100px;   
-    
 }
 
 .onScrollBar::-webkit-scrollbar {
