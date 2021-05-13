@@ -134,7 +134,7 @@ input::placeholder:before{
     display: none;
 }
 
-label{
+div label{
     font-family: 200;
     position: absolute;
 }
@@ -159,7 +159,7 @@ label{
     padding: 20px;
     background-color: rgb(206, 162, 247);
     height: 550px;
-    width: 47%;
+    width: 46%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -170,7 +170,7 @@ label{
     align-self: flex-end;
     background-color: rgb(206, 162, 247);
     height: 550px;
-    width: 47%;
+    width: 46%;
     /* margin-left: auto; */
     display: flex;
     flex-direction: column;
@@ -251,3 +251,112 @@ button{
     position: relative;
     margin: 10px;
 }
+
+#contact{
+    background: red;
+    background:  radial-gradient(circle at 10% 10%, rgb(233, 20, 162), rgb(23, 23, 218));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+    border: 10px solid transparent;
+    border-image:radial-gradient(circle at 10% 10%, rgb(233, 20, 162), rgb(23, 23, 218));
+    border-image-slice: 1;
+    text-align: left;
+    height: 500px; 
+    width: 98.5vw;
+    margin-top: 10px;
+}
+
+
+
+#logo2{
+    background-color: rgb(131, 16, 238);
+    background-clip: padding-box;
+    -webkit-text-fill-color: rgb(131, 16, 238);
+    -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: whitesmoke;
+    border-radius: 70px;
+    padding: 5px;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+#contact > h1{
+    font-weight: lighter;
+    float:left;
+    font-size:600%;
+    border-right: 3px solid gray;
+    padding: 5px;
+    margin-left: 15vw;
+    margin-right: 15px;
+    margin-top: 100px;   
+}
+
+.onScrollBar::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  /* Track */
+  .onScrollBar::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+   
+  /* Handle */
+  .onScrollBar::-webkit-scrollbar-thumb {
+    background: black; 
+    border-radius: 10px;
+   
+  }
+  
+  /* Handle on hover */
+  .onScrollBar::-webkit-scrollbar-thumb:hover {
+    background: rgb(131, 16, 238); 
+  }
+
+ 
+  ::-webkit-scrollbar-track {
+    box-shadow: none;  
+    -webkit-box-shadow: none !important;
+    background-color: transparent;
+  }
+  ::-webkit-scrollbar {
+    width: 0 !important;
+    background-color: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }
+
+#contact-form{
+    margin-top: 100px;
+    -webkit-text-fill-color: initial;
+}
+
+#contact-form > input[type=text]{
+    border:none;
+    border-left: 3px solid rgb(131, 16, 238);
+    outline-color: gray;
+    background-color: rgb(206, 162, 247);
+    
+}
+
+#contact-form > input[type=email]{
+    border:none;
+    border-left: 3px solid rgb(131, 16, 238);
+    outline-color: gray;
+    background-color: rgb(206, 162, 247);
+    
+}
+
+#contact-form > textarea{
+    border:none;
+    border-left: 3px solid rgb(131, 16, 238);
+    outline-color: gray;
+    background-color: rgb(206, 162, 247);
+}
+
+#contact-form > input[type=text]::placeholder{
+    color:gray
+}
+

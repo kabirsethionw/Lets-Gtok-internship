@@ -7,7 +7,7 @@
     <meta name="author" content="Kabir Sethi">
     <title>Lets Gtok</title>
     <link rel="stylesheet" href="./static/styles.css">
-</head>
+</head> 
 <body>
     <header>
         <div id="top">
@@ -88,7 +88,34 @@
             <img id="party-emoji" src="./resources/1620780774848.png" alt="Party Emoji">
         </div>
     </main>
-    <footer></footer>  
+    <footer>
+        <div id="contact">
+            <h1>
+                Lets<br>
+            <span id="logo2">G</span>tok</h1>
+            <form onsubmit="return false;" id="contact-form">
+                Full name: <br>
+                <input type="text" name="name" class="name" placeholder="Name"><br>
+                Email: <br>
+                <input type="email" name="email" class="email" placeholder="Email"> <br>
+                Message to community: <br>
+                <textarea name="message" id="community-message" cols="51" rows="8" placeholder="Message to community"></textarea>
+                <button id="post-message">submit</button>
+            </form>
+        </div>
+    </footer>  
+    <script>
+        window.addEventListener('scroll', (e) => {
+           
+    if (document.body.classList.contains("onScrollBar") === false) {
+        document.body.classList.add("onScrollBar");
+        setTimeout(function(){ document.body.classList.remove("onScrollBar"); }, 1000);
+        
+        }
+        }, true); 
+
+        
+    </script>
    <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/8.6.0/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-database.js"></script>
